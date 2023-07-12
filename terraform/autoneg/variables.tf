@@ -49,6 +49,12 @@ variable "workload_identity" {
   }
 }
 
+variable "service_account_id" {
+  description = "Service account id to be created"
+  default     = "autoneg"
+  type        = string
+}
+
 variable "custom_role_add_random_suffix" {
   type        = bool
   description = "Sets random suffix at the end of the IAM custom role id"
